@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>devfrank&lowbar;cpp</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="devfrank_cpp">devfrank_cpp</h1>
+<p>Useful learning resources about c++</p>
+<p>基于<code>awesome-cpp</code>等资源整理自己常用的实用工具及三方库。</p>
+<h3 id="目录">目录</h3>
+<ul>
+<li><a href="#devfrank_cpp">devfrank_cpp</a>
+<ul>
+<li><a href="#%E7%9B%AE%E5%BD%95">目录</a></li>
+<li><a href="#%E6%8A%80%E6%9C%AF%E7%BD%91%E7%AB%99">技术网站</a></li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E5%BA%93%E5%92%8C%E6%A1%86%E6%9E%B6">常用库和框架</a></li>
+<li><a href="#%E5%AE%9E%E8%B7%B5%E9%A1%B9%E7%9B%AE">实践项目</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="技术网站">技术网站</h3>
+<ul>
+<li><a href="https://www.runoob.com/">RUNOOB</a></li>
+</ul>
+<h3 id="常用库和框架">常用库和框架</h3>
+<p>C++标准库，包括了STL容器，算法和函数等。</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/C%2B%2B_Standard_Library">C++ Standard Library</a>: 是一系列类和函数的集合，使用核心语言编写，也是C++ISO自身标准的一部分。</li>
+<li><a href="http://en.wikipedia.org/wiki/Standard_Template_Library">Standard Template Library</a>: 标准模板库。</li>
+<li><a href="http://en.wikipedia.org/wiki/C_POSIX_library">C POSIX library</a>:  POSIX系统的C标准库规范。</li>
+<li><a href="https://github.com/cplusplus">ISO C++ Standards Committee</a>: C++标准委员会(<a href="https://isocpp.org/">https://isocpp.org/</a>)。</li>
+</ul>
+<p>C++通用框架和库</p>
+<ul>
+<li><a href="https://github.com/abseil/abseil-cpp">abseil-cpp</a>: Abseil C++ 通用库。</li>
+<li><a href="http://apr.apache.org/">APR</a>: Apache可移植运行时库。另一个跨平台的库。</li>
+<li><a href="https://github.com/boostorg">Boost</a>: 大量通用 C++ 库的集合。</li>
+<li><a href="https://github.com/idealvin/co">CO</a> - C++基础库，包含 go-style 协程库，日志库, JSON库, RPC 框架以及其他基本组件。</li>
+<li><a href="https://github.com/ETLCPP/etl">ETL</a>: 嵌入式模板库。</li>
+<li><a href="https://github.com/sumeetchhetri/ffead-cpp">ffead-cpp</a>: 企业应用程序开发框架。</li>
+<li><a href="https://github.com/facebook/folly">Folly</a>: 由Facebook开发和使用的开源C++库。</li>
+<li><a href="https://github.com/Dobiasd/FunctionalPlus">FunctionalPlus</a>: C++ 的函数式编程库，编写简洁易读的C++代码。</li>
+<li><a href="https://github.com/julianstorer/JUCE">JUCE</a>: 包罗万象的C++类库，用于开发跨平台软件。</li>
+<li><a href="https://github.com/Kigs-framework/kigs">Kigs framework</a>: C++免费开源的模块化、多功能、跨平台的RAD框架。</li>
+<li><a href="https://github.com/facebook/libphenom">libPhenom</a>: 用于构建高性能和高度可扩展性系统的事件框架。</li>
+<li><a href="https://github.com/sourcey/libsourcey">LibSourcey</a>: 用于实时的视频流和高性能网络应用程序的C++11 evented IO。</li>
+<li><a href="http://qt-project.org/">Qt</a>: 跨平台的应用程序和用户界面框架。</li>
+</ul>
+<p>人工智能</p>
+<ul>
+<li><a href="https://github.com/ANNetGPGPU/ANNetGPGPU">ANNetGPGPU</a>: 基于GPU(CUDA)的人工神经网络库。</li>
+</ul>
+<ul>
+<li><a href="https://github.com/aigamedev/btsk">btsk</a>: 游戏行为树启动器工具。</li>
+<li><a href="https://github.com/Dobiasd/frugally-deep">frugally-deep</a>: 使用Keras模型的C++库，只有头文件。</li>
+<li><a href="https://github.com/codeplea/genann">Genann</a>: 简单的神经网络C库。</li>
+<li><a href="https://github.com/apache/incubator-mxnet">MXNet</a>: 轻量级、便携、灵活的分布式/移动深度学习，具有动态、可感知突变的数据流管理调度程序。适用于Python、R、Julia、Scala、Go、Javascript和更多网站。</li>
+<li><a href="https://github.com/pytorch/pytorch">PyTorch</a>: 具有强大CPU加速功能，包含张量和动态神经网络的Python库。</li>
+<li><a href="https://github.com/recastnavigation/recastnavigation">Recast/Detour</a>: （3D）导航网格生成器和路径查找，主要用于游戏。</li>
+<li><a href="https://github.com/tensorflow/tensorflow">TensorFlow</a>: 使用数据流图进行数值计算的开源软件库。</li>
+<li><a href="https://github.com/Microsoft/CNTK">CNTK</a>: Microsoft Cognitive Toolkit (CNTK)，开源的深度学习工具库。</li>
+<li><a href="https://github.com/tiny-dnn/tiny-dnn">tiny-dnn</a>: C++11中的无依赖项的深度学习框架，只有头文件。</li>
+<li><a href="https://github.com/Samsung/veles">Veles</a>: 用于快速深度学习应用开发的分布式平台。</li>
+<li><a href="https://github.com/kaldi-asr/kaldi">Kaldi</a>: 语音识别工具包。</li>
+</ul>
+<p>异步事件循环</p>
+<ul>
+<li><a href="https://github.com/chriskohlhoff/asio/">Asio</a>: 用于网络和底层I/O编程的跨平台 C++ 库，使用现代 C++ 方法为开发者提供一致的异步模型。</li>
+</ul>
+<ul>
+<li><a href="http://think-async.com/">Boost.Asio</a>: 用于网络和底层I/O编程的跨平台的 C++ 库。</li>
+<li><a href="https://github.com/actor-framework/actor-framework">C++ Actor Framework</a>: C++中Actor Model的开源实现。</li>
+<li><a href="http://libev.schmorp.de/">libev</a>: 功能齐全，高性能的时间循环，轻微地仿效libevent，但是不再像libevent一样有局限性，也修复了它的一些bug。</li>
+<li><a href="http://libevent.org/">libevent</a>: 事件通知库。</li>
+<li><a href="https://github.com/ithewei/libhv">libhv</a>: 跨平台的事件循环库。</li>
+<li><a href="https://github.com/joyent/libuv">libuv</a>: 跨平台异步I/O。</li>
+<li><a href="https://github.com/xhawk18/promise-cpp">promise-cpp</a>: 实现Promise/A+标准的库，只有头文件。</li>
+<li><a href="https://github.com/skypjack/uvw">uvw</a>: libuv的C++封装器。</li>
+</ul>
+<p>音频</p>
+<ul>
+<li><a href="https://github.com/adamstark/AudioFile">AudioFile</a>: 用于读写音频文件的简单C++库。</li>
+</ul>
+<ul>
+<li><a href="http://www.fmod.org/">FMOD</a>: 易于使用的跨平台的音频引擎和音频内容的游戏创作工具。</li>
+<li><a href="https://www.kfrlib.com/">KFR</a>: 快速、现代的C++ DSP框架，FFT、FIR/IIR滤波器，和采样率转换。</li>
+<li><a href="https://lame.sourceforge.io/using.php">LAME</a>: LAME是高质量MPEG音频第三层（MP3）编码器。</li>
+<li><a href="https://github.com/erikd/libsndfile/">libsndfile</a>: C++封装的C库，用于通过标准库接口读写包含采样声音的文件。</li>
+<li><a href="https://github.com/andrewrk/libsoundio">libsoundio</a>: 用于跨平台实时音频输入输出的C库。</li>
+<li><a href="https://github.com/micknoise/Maximilian">Maximilian</a>: C++音频和音乐数字信号处理库。</li>
+<li><a href="http://www.openal.org/">OpenAL</a>: 开源音频库---跨平台的音频API。</li>
+<li><a href="https://github.com/dr-soft/miniaudio">miniaudio</a>: 单文件音频回放和录制的库。</li>
+<li><a href="http://opus-codec.org/">Opus</a>: 一个完全开放的，免版税的，高度通用的音频编解码器。</li>
+<li><a href="http://www.portaudio.com/">PortAudio</a>: 免费的、跨平台的、开源的音频I/O库。</li>
+<li><a href="https://github.com/sahaRatul/sela">SELA</a>: SimplIE无损音频。</li>
+<li><a href="https://github.com/jarikomppa/soloud">SoLoud</a>: 简单便携的游戏音频引擎。</li>
+<li><a href="https://github.com/TonicAudio/Tonic">Tonic</a>: C++易用和高效的音频合成。</li>
+<li><a href="https://github.com/lieff/minimp3">minimp3</a>: 公共域，无尘室实现的MP3解码器，只有头文件。</li>
+<li><a href="https://github.com/rism-ch/verovio">Verovio</a>: 快速、轻量级的音乐符号雕刻库。</li>
+<li><a href="https://github.com/facebookresearch/wav2letter/">Wav2Letter++</a>: 公共域，完全用C++编写的快速开放源代码的语音处理库，同时使用ArrayFire张量库和flashlight机器学习库来实现最高的效率。</li>
+</ul>
+<p>生物信息，基因组学和生物技术</p>
+<ul>
+<li>
+<p><a href="http://biocpp.sourceforge.net/">BioC++</a>: 生物信息学的C++计算库。</p>
+</li>
+<li>
+<p><a href="http://www.cs.ox.ac.uk/chaste/">Chaste</a>: 开放源代码的C++库，用于为生理学和生物学开发的数学模型的计算仿真。</p>
+</li>
+<li>
+<p><a href="http://molpopgen.github.io/libsequence/">libsequence</a>: 用于表示和分析群体遗传学数据的C++库。</p>
+</li>
+<li>
+<p><a href="http://www.seqan.de/">SeqAn</a>: 专注于生物数据序列分析的算法和数据结构。</p>
+</li>
+<li>
+<p><a href="https://github.com/ekg/vcflib">Vcflib</a>: 用于解析和处理VCF文件的C++库。</p>
+</li>
+<li>
+<p><a href="https://github.com/jewmanchue/wham">Wham</a>: 直接把联想测试应用到BAM文件的基因结构变异。</p>
+</li>
+</ul>
+<p>比特流</p>
+<ul>
+<li><a href="https://github.com/jech/dht">jech/dht</a>: C实现的比特流分布式哈希表库。</li>
+<li><a href="https://github.com/arvidn/libtorrent">libtorrent</a>(a.k.a. libtorrent-rasterbar): 高效的、功能完整的C++比特流实现。</li>
+<li><a href="https://github.com/rakshasa/libtorrent">LibTorrent</a> (a.k.a. libtorrent-rakshasa): 比特流库。</li>
+<li><a href="https://github.com/bittorrent/libutp">libutp</a>: uTorrent传输协议库。</li>
+</ul>
+<p>化学，地球化学，生物化学</p>
+<ul>
+<li><a href="https://github.com/d-SEAMS/seams-core">d-SEAMS</a>: 具有Nix的C++和Lua实现的分子动力学轨道分析引擎，它是分子模拟的递延结构分析的首字母缩写。</li>
+<li><a href="https://github.com/gromacs/gromacs">gromacs</a>: 传递消息的并行分子动力学实现。</li>
+<li><a href="https://github.com/reaktoro/reaktoro">Reaktoro</a>: C++和python中用于对化学反应系统进行建模的计算框架。</li>
+<li><a href="https://github.com/lammps/lammps">LAMMPS</a>: 经典的用于材料建模的分子动力学代码，它是大范围原子/分子巨量平行模拟器的首字母缩写。</li>
+</ul>
+<p>控制台/终端用户界面，命令行界面</p>
+<ul>
+<li><a href="https://github.com/adishavit/argh">Argh!</a>: 极简的只有头文件的参数处理程序。</li>
+<li><a href="https://github.com/taywee/args">Taywee / args</a>: 简单的只有头文件的C++参数解析库。</li>
+<li><a href="http://www.boost.org/doc/libs/1_57_0/doc/html/program_options.html">Boost.Program_options</a>: 通过常见的方法，例如命令行和配置文件，来获取程序选择项的库。</li>
+<li><a href="https://github.com/catchorg/Clara">Clara</a>: 用于C++11及更高版本的易于使用、可组合的命令行解析器。</li>
+<li><a href="https://github.com/daniele77/cli">cli</a>: 用于交互式命令行界面的跨平台的C++14库，只有头文件。</li>
+<li><a href="https://github.com/CLIUtils/CLI11">CLI11</a>: 单文件或多文件的C++11库，用于简单和高级的CLI解析，只有头文件。</li>
+</ul>
+<p>压缩和归档库</p>
+<ul>
+<li><a href="http://zlib.net/">ZLib</a>: 非常紧凑的数据流压缩库。</li>
+<li><a href="https://github.com/Dead2/zlib-ng">zlib-ng</a>: 用于“下一代”系统的zlib，将一些重要的优化进行嵌入式替换。</li>
+<li><a href="https://github.com/facebook/zstd">zstd</a>: Zstandard-快速实时压缩算法。由Facebook开发。</li>
+<li><a href="http://zziplib.sourceforge.net/">ZZIPlib</a>: 提供ZIP归档的读权限。</li>
+</ul>
+<p>并发和多线程</p>
+<ul>
+<li><a href="https://github.com/ComputationalRadiationPhysics/alpaka">alpaka</a>: 并行内核加速的抽象库。</li>
+<li><a href="https://github.com/arrayfire/arrayfire">ArrayFire</a>: 通用GPU库。</li>
+<li><a href="https://github.com/Amanieu/asyncplusplus">Async++</a>: C++ 11 的轻量级并行框架，受Microsoft PPL库和N3428 C++标准提案启发。</li>
+</ul>
+<ul>
+<li><a href="https://github.com/kylelutz/compute">Boost.Compute</a>: 用于OpenCL的C++GPU计算库。</li>
+<li><a href="https://github.com/HSA-Libraries/Bolt">Bolt</a>: 针对GPU进行优化的C++模板库。</li>
+<li><a href="https://github.com/concurrencykit/ck">ck</a>: 并发基元，安全内存回收机制和非阻塞数据结构。</li>
+<li><a href="https://github.com/cameron314/concurrentqueue">concurrentqueue</a>: C++11的快速多生产者、多消费者的无锁并发队列。</li>
+<li><a href="https://github.com/cpp-taskflow/cpp-taskflow">Cpp-Taskflow</a>: 具有任务依赖性的快速C++并行编程。</li>
+<li><a href="https://github.com/NVlabs/cub">CUB</a>: CUB为CUDA编程模式的每一层提供了最新的可重用软件组件。</li>
+<li><a href="https://github.com/eyalroz/cuda-api-wrappers">cuda-api-wrappers</a>: 轻量级的现代C++封装器，用于CUDA GPU的运行时API编程。</li>
+<li><a href="https://github.com/ComputationalRadiationPhysics/cupla">cupla</a>: 通过Alpaka在OpenMPA、线程、TBB……运行CUDA/C++的C++ API。</li>
+<li><a href="https://github.com/schlangster/cpp.react">C++React</a>: 用于C++11的反应性编程库。</li>
+<li><a href="https://github.com/RichieSams/FiberTaskingLib">FiberTaskingLib</a>: 基于任务的多线程库，支持具有任意依赖关系的任务图表。</li>
+<li><a href="https://github.com/STEllAR-GROUP/hpx/">HPX</a>: 适用于任何规模的并行分布式应用的通用C++运行时系统。</li>
+<li><a href="https://github.com/GameTechDev/GTS-GamesTaskScheduler">Intel Games Task Scheduler</a>: 为了游戏开发者的需要而设计的任务调度框架。</li>
+<li><a href="https://www.khronos.org/opencl/">OpenCL</a>: 并行编程的异构系统的开放标准。</li>
+<li><a href="http://openmp.org/">OpenMP</a>: OpenMP API。</li>
+<li><a href="https://github.com/Stiffstream/sobjectizer">SObjectizer</a>: 实现Actor、Publish-Subscribe和CSP模式的相当小的C++框架。</li>
+<li><a href="https://github.com/bloomberg/quantum">Quantum</a>: 建立在<a href="https://www.boost.org/doc/libs/1_65_0/libs/coroutine2/doc/html/index.html">boost::coroutines2</a>顶层的强大的C++协同调度程序框架。</li>
+<li><a href="http://raftlib.io/">RaftLib</a>: RaftLib C++ 库，通过类似iostream的 C++ 运算符实现流/数据流并发性。</li>
+<li><a href="https://github.com/cameron314/readerwriterqueue">readerwriterqueue</a>: C++的快速单生产者、单消费者的无锁队列。</li>
+<li><a href="https://github.com/stotko/stdgpu">stdgpu</a>: GPU上高效的类似STL的数据结构。</li>
+<li><a href="http://thrust.github.io/">Thrust</a>: 类似于C++标准模板库的并行算法库。</li>
+<li><a href="https://github.com/bloomen/transwarp">transwarp</a>: 任务并发性的C++库，只有头文件。</li>
+<li><a href="https://github.com/ddemidov/vexcl">VexCL</a>: 用于OpenCL/CUDA 的C++向量表达式模板库。</li>
+<li><a href="https://github.com/bloomberg/quantum">Quantum</a>: 建立在<a href="https://www.boost.org/doc/libs/1_65_0/libs/coroutine2/doc/html/index.html">boost::coroutines2</a>顶层的强大的C++协同调度程序框架。</li>
+<li><a href="http://parasol-lab.gitlab.io/stapl-home/">STAPL</a>: C++并行编程框架，旨在工作在共享和分布式内存并行电脑上。</li>
+</ul>
+<p>配置文件，INI文件</p>
+<ul>
+<li><a href="https://github.com/benhoyt/inih">inih</a>: C语言的简单.INI文件解析器，很适合嵌入式系统。</li>
+<li><a href="https://github.com/ndevilla/iniparser">iniparser</a>: INI文件解析器。</li>
+<li><a href="https://github.com/hyperrealm/libconfig">libconfig</a>: 用于处理结构化配置文件的C、C++库。</li>
+<li><a href="https://github.com/martinh/libconfuse">libconfuse</a>: C的小型配置文件解析库。</li>
+<li><a href="https://github.com/brofield/simpleini">simpleini</a>: 跨平台的C++库，提供用于读写INI配置文件的简单API。</li>
+<li><a href="https://github.com/marzer/tomlplusplus">toml++</a>: TOML解析器和串化器，适用于C++17及更高版本，只有头文件。</li>
+</ul>
+<p>密码学和加密库</p>
+<ul>
+<li><a href="http://bcrypt.sourceforge.net/">Bcrypt</a>: 一个跨平台的文件加密工具，加密文件可以移植到所有可支持的操作系统和处理器中。</li>
+<li><a href="https://github.com/fffaraz/awesome-cpp/blob/master">BeeCrypt</a>: 可移植和快速的加密库。</li>
+<li><a href="http://botan.randombit.net/">Botan</a>: C++加密库。</li>
+<li><a href="http://www.cryptopp.com/">Crypto++</a>: 一个有关加密方案的免费的C++库。</li>
+<li><a href="http://www.openssl.org/">OpenSSL</a>:  一个健壮的，商用的，功能齐全的，开源的加密库。</li>
+</ul>
+<p>用于解析逗号分隔值（CSV）文件的库</p>
+<ul>
+<li><a href="https://github.com/p-ranav/csv2">csv2</a>: 现代C++的快速CSV解析器。</li>
+<li><a href="https://github.com/ben-strasser/fast-cpp-csv-parser">Fast C++ CSV Parser</a>: 用于读取CSV文件的小型、易于使用和快速的库，只包含头文件。</li>
+<li><a href="https://github.com/vincentlaucsb/csv-parser">Vince's CSV Parser</a>: 快速、独立、流式的C++17 CSV解析器，具有可选的类型转换和统计信息。</li>
+</ul>
+<p>数据库，SQL服务器，ODBC驱动程序和工具</p>
+<ul>
+<li><a href="https://github.com/paulftw/hiberlite">hiberlite</a>: 用于Sqlite3的C++对象关系映射。</li>
+<li><a href="https://github.com/redis/hiredis">Hiredis</a>: 用于Redis数据库的很简单的C客户端库。</li>
+<li><a href="https://github.com/google/leveldb">LevelDB</a>: 由Google编写的快速键值存储库，提供了从字符键到字符串值的有序映射。</li>
+<li><a href="http://symas.com/mdb/">LMDB</a>: 符合数据库四大基本元素的嵌入键值存储。</li>
+<li><a href="https://github.com/bendiken/lmdbxx">LMDB++</a>: LMDB嵌入式数据库的C++11封装器。</li>
+<li><a href="https://github.com/mongodb/mongo-c-driver">MongoDB C Driver</a>: C的MongoDB客户端库。</li>
+<li><a href="https://github.com/mongodb/mongo-cxx-driver">MongoDB C++ Driver</a>: MongDB的C++驱动程序。</li>
+<li><a href="https://github.com/mongodb/libbson">MongoDB Libbson</a>: BSON实用库。</li>
+<li><a href="http://www.tangentsoft.net/mysql++/">MySQL++</a>: 封装了MySql的C API的C++ 封装器。</li>
+<li><a href="https://github.com/nanodbc/nanodbc">nanodbc</a>: 用于本机C ODBC API的小型C++封装器。</li>
+<li><a href="https://www.codesynthesis.com/products/odb/">ODB</a>: C++的开源、跨平台、跨数据库的对象关系映射（ORM）系统。</li>
+<li><a href="https://github.com/luca3m/redis3m">redis3m</a>: 使用干净C++接口的hiredis封装器，支持标记和现成的模式。</li>
+<li><a href="https://github.com/facebook/rocksdb">RocksDB</a>: 来自Facebook的嵌入键值的快速存储。</li>
+<li><a href="https://github.com/LiveAsynchronousVisualizedArchitecture/simdb">SimDB</a>: 高性能、共享内存、无锁、跨平台、单文件、最小依赖的C++11键值存储。</li>
+<li><a href="https://github.com/SOCI/soci">SOCI</a>: C++的数据库抽象层。</li>
+<li><a href="http://www.sqlite.org/">SQLite</a>: 一个完全嵌入式的，功能齐全的关系数据库，只有几百KB，可以正确包含到你的项目中。</li>
+<li><a href="https://github.com/SRombauts/SQLiteCpp">SQLiteC++</a>: SQLiteC++ (SQLiteCpp)是聪明且易于使用的C++ SQLite3封装器。</li>
+</ul>
+<p>调试库， 内存和资源泄露检测，单元测试</p>
+<ul>
+<li><a href="https://github.com/bombela/backward-cpp">backward-cpp</a>: C++的漂亮堆栈轨迹打印机。</li>
+<li><a href="https://github.com/google/benchmark">benchmark</a>: Google提供的小型微基准支持库。</li>
+<li><a href="http://www.boost.org/doc/libs/master/libs/test/doc/html/index.html">Boost.Test</a>: Boost测试库。</li>
+<li><a href="https://github.com/libcheck/check">check</a>: C的单元测试框架。</li>
+<li><a href="https://github.com/onqtam/doctest">doctest</a>: 功能最轻便的单个C++头文件的测试框架。</li>
+<li><a href="https://github.com/philsquared/Catch">Catch</a>: 一个很时尚的，C++原生的框架，只包含头文件，用于单元测试，测试驱动开发和行为驱动开发。</li>
+<li><a href="https://github.com/catchorg/Catch2">Catch2</a>: 一个很时尚的，C++原生的框架，只包含头文件，用于单元测试，测试驱动开发和行为驱动开发。</li>
+<li><a href="https://github.com/DigitalInBlue/Celero">Celero</a>: C++基准测试框架。</li>
+<li><a href="https://github.com/cpputest/cpputest">CppUTest</a>: C/C++的单元测试和模拟框架。</li>
+<li><a href="http://cute-test.com/">CUTE</a>: 更容易的C++单元测试。</li>
+<li><a href="https://cmocka.org/">CMocka</a>: 支持模拟对象的C单元测试框架。</li>
+<li><a href="http://www.freedesktop.org/wiki/Software/cppunit/">CppUnit</a>: 由JUnit移植过来的C++测试框架。</li>
+<li><a href="http://www.cmake.org/cmake/help/v2.8.8/ctest.html">CTest</a>: CMake测试驱动程序。</li>
+<li><a href="https://github.com/sharkdp/dbg-macro">dbg-macro</a>: C++的dbg（……）宏。</li>
+<li><a href="http://www.deleaker.com/">Deleaker</a>: 用于资源泄露检查的工具，包括内存、GDI和处理泄露。</li>
+</ul>
+<p>游戏引擎</p>
+<ul>
+<li><a href="https://github.com/Equilibrium-Games/Acid">Acid</a>: 高速的C++17 Vulkan游戏引擎。</li>
+<li><a href="http://liballeg.org/">Allegro</a>: 主要用于视频游戏和多媒体编程的跨平台库。</li>
+<li><a href="http://www.cocos2d-x.org/">Cocos2d-x</a>: 用于构建2D游戏、交互式书籍、演示和其它图形应用程序的多平台框架。</li>
+<li><a href="https://github.com/orangeduck/Corange">Corange</a>: 用纯C、SDL、OpenGL编写的游戏引擎。</li>
+<li><a href="https://github.com/dbartolini/crown">Crown</a>: Crown是一款通用的数据驱动游戏引擎，使用正统C++从零开始编写，并牢记简约和面向数据的设计理念。</li>
+<li><a href="http://sourceforge.net/projects/delta3d/">delta3d</a>: 健壮的仿真平台。</li>
+<li><a href="https://github.com/skypjack/entt">EnTT</a>: 游戏与现代C++的碰撞。</li>
+<li><a href="https://github.com/gameplay3d/GamePlay">GamePlay</a>: 用于创建2D/3D移动和桌面游戏的跨平台本机C++游戏框架。</li>
+<li><a href="https://github.com/godotengine/godot">Godot</a>: 功能齐全、开源、有MIT许可的游戏引擎。</li>
+<li><a href="http://gritengine.com/">Grit</a>: 社区项目，用于构建一个免费的游戏引擎，实现开放的世界3D游戏。</li>
+<li><a href="https://github.com/amzeratul/halley">Halley</a>: 用C++14编写的轻量级游戏引擎，带有“真实的”实体组件系统。</li>
+<li><a href="https://github.com/gongminmin/KlayGE">KlayGE</a>: 具有基于插件架构的跨平台、开源的游戏引擎。</li>
+<li><a href="https://github.com/nCine/nCine">nCine</a>: 注重性能的跨平台2D游戏引擎，用C++11编写，还可以选择使用Lua编写脚本。</li>
+<li><a href="https://github.com/OpenXRay/xray-16">OpenXRay</a>: 在S.T.A.L.K.E.R.游戏系列中使用的社群修改的X射线引擎。</li>
+<li><a href="http://oxygine.org/">Oxygine</a>: 跨平台的2D C++游戏引擎。</li>
+<li><a href="https://github.com/panda3d/panda3d">Panda3D</a>: 游戏引擎，用于Python和C++程序的3D渲染和游戏开发的框架。</li>
+<li><a href="https://github.com/OneLoneCoder/olcPixelGameEngine">PixelGameEngine</a>: olcPixelGameEngine的官方发行版，该工具用于javidx9的YouTube视频和项目。</li>
+<li><a href="http://polycode.org/">Polycode</a>: C++实现的用于创建游戏的开源框架（与Lua绑定）。</li>
+<li><a href="https://github.com/raysan5/raylib">raylib</a>: 简单、易于使用的库，用于享受视频游戏编程的乐趣。</li>
+<li><a href="https://github.com/spring/spring">Spring</a>: 强大、免费、跨平台的RTS游戏引擎。</li>
+<li><a href="https://github.com/GarageGames/Torque2D">Torque2D</a>: 为2D游戏开发构建的开源、跨平台C++引擎。</li>
+<li><a href="https://github.com/GarageGames/Torque3D">Torque3D</a>: 为3D游戏开发构建的开源C++引擎。</li>
+<li><a href="https://github.com/hugoam/toy">toy engine</a>: toy是一个轻量的模块化的 C++ 游戏引擎，并提供简单的、有表现力的C++惯用法来快速迭代设计功能齐全的2D和3D游戏。</li>
+<li><a href="https://urho3d.github.io/">Urho3D</a>: C++实现的免费、轻量级、跨平台的2D和3D游戏引擎，受到OGRE和Horde3D很大的启发。</li>
+</ul>
+<p>图形用户界面</p>
+<ul>
+<li><a href="https://github.com/AshampooSystems/boden">Boden</a>: 本机、移动、跨平台的GUI框架。</li>
+<li><a href="http://cegui.org.uk/">CEGUI</a>:  灵活的跨平台GUI库。</li>
+<li><a href="https://github.com/cycfi/elements">Elements</a>: 轻量级、细粒度、分辨率无关的模块化GUI库。</li>
+<li><a href="http://www.fltk.org/index.php">FLTK</a>: 快速，轻量级的跨平台的C++GUI工具包。</li>
+<li><a href="https://github.com/vczh-libraries/GacUI">GacUI</a>: GPU加速的C++用户界面，具有所见即所得的开发工具，支持XML，具有内置数据绑定和MVVM功能。</li>
+<li><a href="http://www.gtk.org/">GTK+</a>: 用于创建图形用户界面的多平台工具包。</li>
+<li><a href="http://www.gtkmm.org/en/">gtkmm</a>: 用于受欢迎的GUI库GTK+的官方C++接口。</li>
+<li><a href="https://github.com/ocornut/imgui">imgui</a>: 拥有最小依赖关系的即时模式图形用户界面。</li>
+<li><a href="https://github.com/epezent/implot">implot</a>: imgui的即时模式绘图控件。</li>
+<li><a href="https://www.tecgraf.puc-rio.br/iup">iup</a>: 构建图形用户界面的多平台工具包。</li>
+<li><a href="https://github.com/andlabs/libui">libui</a>: C中简单、可移植（但是不灵活）的GUI库，使用其支持的每一种平台的本机GUI技术。</li>
+<li><a href="http://mygui.info/">MyGUI</a>: 快速，灵活，简单的GUI。</li>
+<li><a href="http://nanapro.org/en-us/">nana</a>: Nana是现代C++风格的GUI编程的跨平台库。</li>
+<li><a href="https://github.com/mitsuba-renderer/nanogui">NanoGui</a>: 简约、跨平台的控件库，用于OpenGL 3.x及更高版本。</li>
+<li><a href="https://github.com/Immediate-Mode-UI/Nuklear">nuklear</a>: 单个头文件的ANSI C gui库。</li>
+<li><a href="http://qcustomplot.com/">QCustomPlot</a>: 没有更多依赖关系的Qt绘图控件。</li>
+<li><a href="http://qwt.sourceforge.net/">Qwt</a>: 用户与技术应用的Qt 控件。</li>
+<li><a href="http://qwtplot3d.sourceforge.net/">QwtPlot3D</a>: 功能丰富的基于Qt/OpenGL的C++编程库，本质上提供了一群3D控件。</li>
+<li><a href="https://github.com/mikke89/RmlUi">RmlUi</a>: 进化的HTML/CSS用户界面库，libRocket的分支。</li>
+<li><a href="http://sciter.com/">Sciter</a>: Sciter是可嵌入的HTML/CSS/脚本语言引擎，旨在用于现代桌面应用程序的UI层。</li>
+<li><a href="http://wxwidgets.org/">wxWidgets</a> C++库，允许开发人员使用一个代码库可以为widows， Mac OS X，Linux和其他平台创建应用程序。</li>
+<li><a href="https://github.com/yue/yue">Yue</a>: 创建本机跨平台GUI应用的库。</li>
+</ul>
+<p>图形</p>
+<ul>
+<li><a href="https://github.com/assimp/assimp">assimp</a>: 开放资产导入库（assimp）是跨平台的3D模型导入库，旨在为不同的3D资产文件格式提供通用的API。</li>
+<li><a href="https://github.com/bkaradzic/bgfx">bgfx</a>: 跨平台的渲染库。</li>
+<li><a href="https://github.com/blend2d/blend2d">Blend2D</a>: 由JIT编译器提供技术支持的2D矢量图形引擎。</li>
+<li><a href="https://github.com/GameFoundry/bsf">bs::framework</a>: 用于实时图形应用开发的现代C++14库。</li>
+<li><a href="http://www.cairographics.org/">Cairo</a>: 支持多种输出设备的2D图形库。</li>
+<li><a href="https://github.com/walkerje/C-Turtle">C-Turtle</a>: 充当Clmg封装器的C++11 turtle图形库，只有头文件。</li>
+<li><a href="https://github.com/DiligentGraphics/DiligentEngine">Diligent Engine</a>: 现代、跨平台、低阶的3D图形库。</li>
+<li><a href="https://github.com/Microsoft/DirectXTK">DirectXTK</a>: 用于在C++中编写DirectX 11.x代码的帮助类的集合。</li>
+<li><a href="https://github.com/glfw/glfw">GLFW</a>: 简单、跨平台的OpenGL处理库。</li>
+<li><a href="https://github.com/kosua20/herebedragons">herebedragons</a>: 使用各种引擎、框架或者API实现的基本3D场景。</li>
+<li><a href="https://github.com/horde3d/Horde3D">Horde3D</a> 一个小型的3D渲染和动画引擎。</li>
+<li><a href="https://github.com/google/ion">Ion</a>: 小型高效的库集合，用于构建使用3D图形的跨平台客户端或服务器应用程序。</li>
+<li><a href="http://irrlicht.sourceforge.net/">Irrlicht</a>: C++编写的高性能实时3D引擎。</li>
+<li><a href="https://github.com/libigl/libigl">libigl</a>: 简单的C++几何处理库。</li>
+<li><a href="https://github.com/LukasBanana/LLGL">LLGL</a>: 低水平图形库（LLGL）是现代图形API的薄抽象层。</li>
+<li><a href="https://github.com/mosra/magnum">magnum</a>: 用于游戏和数据可视化的轻量级和模块化的 C++ 11 /C++ 14图形中间件。</li>
+<li><a href="https://github.com/memononen/nanovg">NanoVG</a>: OpenGL之上的抗锯齿2D矢量图形库，用于UI和可视化。</li>
+<li><a href="http://www.ogre3d.org/">Ogre 3D</a>: 用C++编写的一个面向场景，实时，灵活的3D渲染引擎（并非游戏引擎）。</li>
+<li><a href="http://www.openscenegraph.org/">OpenSceneGraph</a>: 具有高性能的开源3D图形工具包。</li>
+<li><a href="https://github.com/PixarAnimationStudios/OpenSubdiv">OpenSubdiv</a>: Pixar的库，用于评估和渲染CPU和GPU上的细分曲面。</li>
+<li><a href="http://www.openvdb.org/">OpenVDB</a>: 用于存储、编辑、渲染体积数据库的库和工具。</li>
+<li><a href="http://www.panda3d.org/">Panda3D</a>: 用于3D渲染和游戏开发的框架，用Python和C++编写。</li>
+<li><a href="https://github.com/wdas/partio">Partio</a>: 用于处理粒子数据的库，支持大多数常见文件形式。</li>
+<li><a href="https://github.com/google/skia">Skia</a> 用于绘制文字，图形和图像的完整的2D图形库。</li>
+<li><a href="https://github.com/msteinbeck/tinyspline">TinySpline</a>: 小型但强大的ANSI C库，用于差值、转换和查询任意NURBS、B-样条函数和贝赛尔曲线。</li>
+<li><a href="https://github.com/urho3d/Urho3D">urho3d</a> 跨平台的渲染和游戏引擎。</li>
+<li><a href="https://github.com/xelatihy/yocto-gl">Yocto/GL</a>: 用于数据驱动的基于物理图形的微型C++库。</li>
+</ul>
+<p>图像处理</p>
+<ul>
+<li><a href="http://www.boost.org/doc/libs/1_56_0/libs/gil/doc/index.html">Boost.GIL</a>: 通用图像库。</li>
+<li><a href="http://cimg.sourceforge.net/">CImg</a>: 用于图像处理的小型开源C++工具包。</li>
+<li><a href="http://www.xdp.it/cximage.htm">CxImage</a>: 用于加载，保存，显示和转换的图像处理和转换库，可以处理的图片格式包括 BMP, JPEG, GIF, PNG, TIFF, MNG, ICO, PCX, TGA, WMF, WBMP, JBG, J2K。</li>
+<li><a href="https://github.com/davisking/dlib">Dlib</a>: 现代C++11的机器学习、计算机视觉、数值优化和深度学习工具包。</li>
+<li><a href="http://freeimage.sourceforge.net/">FreeImage</a>: 开源库，支持现在多媒体应用所需的通用图片格式和其他格式。</li>
+<li><a href="https://github.com/ShiqiYu/libfacedetection">libfacedetection</a>: 用于图像中人脸检测的开源库，其人脸检测的速度能达到1500FPS。</li>
+<li><a href="https://github.com/libjpeg-turbo/libjpeg-turbo">libjpeg-turbo</a>: 使用SIMD指令来加速基线JPEG编码和解码的JPEG图像编解码器。</li>
+<li><a href="http://opencv.org/">OpenCV</a>:  开源计算机视觉类库。</li>
+<li><a href="http://www.openexr.com/">OpenEXR</a>: 具有高动态范围成像的跨平台库。</li>
+<li><a href="https://github.com/OpenImageIO/oiio">OpenImageIO</a>: 强大的图像和纹理处理库，支持多种常见的有损和RAW格式。</li>
+<li><a href="https://github.com/ermig1979/Simd">Simd</a>: 使用SIMD的C++图像处理库: SSE，SSE2，SSE3，SSSE3，SSE4.1，SSE4.2，AVX，AVX2，AVX-512，VMX（Altivec）和VSX（Power7），NEON for ARM。</li>
+<li><a href="https://github.com/nothings/stb/blob/master/stb_image.h">stb-image</a>: STB单个头文件的图像加载库。</li>
+<li><a href="https://code.google.com/p/tesseract-ocr/">tesseract-ocr</a>: OCR引擎。</li>
+<li><a href="https://github.com/cdcseacave/TinyEXIF">TinyEXIF</a>: 用于JPEG的微型ISO兼容的C++ EXIF和XMP解析库。</li>
+<li><a href="https://github.com/matt-42/vpp">Video++</a>: C++ 14高性能的视频和图像处理库。</li>
+<li><a href="https://github.com/ukoethe/vigra">VIGRA</a>: 用于图像分析通用C++计算机视觉库。</li>
+<li><a href="http://www.vtk.org/">VTK</a>: 用于3D计算机图形学，图像处理和可视化的开源免费软件系统。</li>
+</ul>
+<p>国际化</p>
+<ul>
+<li><a href="https://github.com/sheredom/utf8.h">utf8.h</a>: C和C++的单个头文件的utf8字符串函数。</li>
+</ul>
+<p>进程间通信</p>
+<ul>
+<li><a href="https://thrift.apache.org/">Apache Thrift</a>: 高效的跨语言IPC/RPC，可在C++、Java、Python、PHP、C#和许多其它语言之间运行。最初是由Facebook开发。</li>
+<li><a href="https://github.com/grpc/grpc">gRPC</a>: 高性能、开源、通用的RPC框架。</li>
+<li><a href="https://github.com/zeroc-ice/ice">Ice</a>: 全面的RPC框架，支持C++、C＃、Java、JavaScript、Python等。</li>
+<li><a href="https://github.com/cinemast/libjson-rpc-cpp">libjson-rpc-cpp</a>: 用于C++服务器和客户端的JSON-RPC框架。</li>
+<li><a href="https://github.com/rpclib/rpclib">rpclib</a>: 现代C++的msgpack-RPC服务器和客户端库。</li>
+<li><a href="https://github.com/pearu/simple-rpc-cpp">simple-rpc-cpp</a>: C / C++函数的简单RPC封装生成器。</li>
+<li><a href="http://wamp.ws/">WAMP</a>: 提供RPC和发布/订阅消息传递模式。（各种实现，各种语言）</li>
+<li><a href="http://xmlrpc-c.sourceforge.net/">xmlrpc-c</a>: 基于XML和HTTP的轻量级RPC库。</li>
+</ul>
+<p>Json</p>
+<ul>
+<li><a href="http://www.boost.org/doc/libs/1_55_0/doc/html/property_tree.html">Boost.PropertyTree</a>: 属性树解析器/生成器，可用于解析XML / JSON / INI / Info文件。</li>
+<li><a href="https://github.com/DaveGamble/cJSON">cJSON</a>: ANSI C的超轻量级JSON解析器。</li>
+<li><a href="https://github.com/nlohmann/json">json</a>: 用于现代C++的JSON。</li>
+<li><a href="https://github.com/open-source-parsers/jsoncpp">JsonCpp</a>: 可与JSON交互的C++库。</li>
+<li><a href="https://github.com/miloyip/rapidjson">RapidJSON</a>: 用于C++的快速JSON 解析生成器，包含SAX和DOM两种风格的API。</li>
+</ul>
+<p>日志</p>
+<ul>
+<li><a href="http://www.boost.org/doc/libs/1_56_0/libs/log/doc/html/index.html">Boost.Log</a>: 设计非常模块化，并且具有扩展性。</li>
+<li><a href="https://github.com/easylogging/easyloggingpp">Easylogging++</a>: 适用于C++ 11（或更高版本）应用程序的超轻量级、高性能的日志库。</li>
+<li><a href="https://github.com/google/glog">glog</a>: Google日志模块的C++实现。</li>
+<li><a href="http://log4cpp.sourceforge.net/">Log4cpp</a>: C++类库，用于灵活地添加日志到文件，系统日志，IDSA和其他地方。</li>
+<li><a href="https://github.com/log4cplus/log4cplus">log4cplus</a>: 易于使用的C++日志API，可提供对日志管理和配置的线程安全、灵活且任意粒度的控制。</li>
+<li><a href="https://github.com/emilk/loguru">loguru</a>: 轻量级的C++日志库。</li>
+<li><a href="https://github.com/SergiusTheBest/plog">plog</a>: C++可移植且简单的日志，少于1000行代码。</li>
+<li><a href="https://github.com/mattiasflodin/reckless">reckless</a>: C++低延迟、高吞吐量、异步的日志库。</li>
+<li><a href="https://github.com/gabime/spdlog">spdlog</a>: 超级快的C++日志库，只包含头文件。</li>
+<li><a href="http://www.templog.org/">templog</a>: 小型、轻量级的 C++ 库，可以添加日志到你的C++应用程序中。</li>
+<li><a href="https://github.com/odygrd/quill">Quill</a>: 异步、跨平台、低时延的日志库。</li>
+</ul>
+<p>机器学习</p>
+<ul>
+<li><a href="https://github.com/BVLC/caffe">Caffe</a>: 快速的神经网络框架。</li>
+<li><a href="https://github.com/liuliu/ccv">CCV</a>: 基于C /缓存/核心的计算机视觉库，现代计算机视觉库。</li>
+<li><a href="https://github.com/pjreddie/darknet">darknet</a>: 用C和CUDA编写的开源神经网络框架。</li>
+<li><a href="https://github.com/FidoProject/Fido">Fido</a>: 用于嵌入式电子和机器人技术的高度模块化的C++机器学习库。</li>
+<li><a href="https://github.com/facebookresearch/flashlight">flashlight</a>: 来自Facebook AI研究中心的快速、灵活的机器学习库，其完全用C++编写，基于ArrayFire张量库。</li>
+<li><a href="https://github.com/cjlin1/libsvm">libsvm</a>: 支持向量机的简单、易用、高效的库。</li>
+<li><a href="https://github.com/meta-toolkit/meta">MeTA</a>: 现代C++的数据科学工具包。</li>
+<li><a href="https://github.com/dmlc/minerva">Minerva</a>: 快速、灵活的深度学习系统。</li>
+<li><a href="http://www.mlpack.org/">mlpack</a>: 可扩展的C++机器学习库。</li>
+<li><a href="https://github.com/Itseez/opencv">OpenCV</a>: 开源计算机视觉库。</li>
+</ul>
+<p>数学</p>
+<ul>
+<li><a href="https://github.com/b-k/apophenia">Apophenia</a>: 用于统计和科学计算的C库。</li>
+<li><a href="http://arma.sourceforge.net/">Armadillo</a>: 用于线性代数和科学计算的快速C++库。</li>
+<li><a href="https://github.com/autodiff/autodiff">autodiff</a>: 用于自动微分的现代、快速且富有表现力的C++库。</li>
+<li><a href="http://www.boost.org/doc/libs/master/libs/multiprecision/doc/html/index.html">Boost.Multiprecision</a>: 在C++中提供更高范围/精度的整数、有理数和浮点数类型，只包含头文件或者在GMP / MPFR / LibTomMath后端。</li>
+<li><a href="http://ceres-solver.org/">ceres-solver</a>: 来自谷歌的C++库，用于建模和解决大型复杂非线性最小平方问题。</li>
+<li><a href="https://github.com/CGAL/cgal">CGAL</a>: 高效，可靠的几何算法集合。</li>
+<li><a href="http://cmldev.net/">cml</a>: 用于游戏和图形的免费C++数学库。</li>
+<li><a href="https://github.com/davisking/dlib">Dlib</a>: 现代C++11的机器学习、计算机视觉、数值优化和深度学习工具包。</li>
+<li><a href="http://eigen.tuxfamily.org/">Eigen</a>: 高级C++模板头文件库，包括线性代数，矩阵，向量操作，数值解决和其他相关的算法。</li>
+<li><a href="http://www.partow.net/programming/exprtk/">ExprTK</a>: C++数学表达式工具包库（ExprTk）是一个易于使用、易于集成且非常高效的运行时数学表达式解析器和评估引擎。</li>
+<li><a href="https://www.geometrictools.com/">Geometric Tools</a>: 用于数学、图形、图像分析和物理学领域计算的C++库。</li>
+<li><a href="https://github.com/g-truc/glm">GLM</a>: 只包含头文件的C++数学库，可与OpenGL的GLSL数学匹配并互操作。</li>
+<li><a href="http://ggt.sourceforge.net/">GMTL</a>: 数学图形模板库是一组广泛实现基本图形的工具。</li>
+<li><a href="https://gmplib.org/">GMP</a>: 用于个高精度计算的C/C++库，处理有符号整数，有理数和浮点数。</li>
+<li><a href="https://github.com/jeremyong/klein">Klein</a>: 快速、SIMD优化的C++ 17几何代数库，用于点、线和平面投影、相交、连接、刚体运动等。</li>
+<li><a href="https://github.com/sgorsten/linalg">linalg.h</a>: C++的单头文件、公共域、短向量数学库。</li>
+<li><a href="https://github.com/CertiVox/MIRACL">MIRACL</a>: 多精度整数和有理数算法加密库。</li>
+<li><a href="http://beltoforion.de/article.php?a=muparser">muparser</a>: muParser是用C++编写的可扩展、高性能的数学表达式解析库。</li>
+<li><a href="https://github.com/libtom/libtommath">LibTomMath</a>: 完全用C编写的免费、开源、可移植的数论多精度整数库。</li>
+<li><a href="https://github.com/datenwolf/linmath.h">linmath.h</a>: 精益线性数学库，主要用于图形编程。</li>
+<li><a href="https://sourceforge.net/projects/lpsolve">lp_solve</a>: 用于制定和解决线性编程问题的库。</li>
+<li><a href="https://github.com/xianyi/OpenBLAS">OpenBLAS</a>: 基于GotoBLAS2 1.13 BSD版本的优化BLAS库。</li>
+<li><a href="https://github.com/lballabio/quantlib">QuantLib</a>v: 用于计量金融的免费/开源库。</li>
+<li><a href="https://github.com/kthohr/stats">StatsLib</a>: 统计分布函数的C++库，只包含头文件。</li>
+<li><a href="https://github.com/symengine/symengine">SymEngine</a>: 快速符号处理库，用C++重写了SymPy的核心。</li>
+<li><a href="https://github.com/codeplea/tinyexpr">TinyExpr</a>: 用于解析和评估字符串中的数学表达式的C库。</li>
+<li><a href="https://github.com/VcDevel/Vc">Vc</a>: C++的SIMD矢量类。</li>
+<li><a href="http://versor.mat.ucsb.edu/">Versor</a>: （快速的）几何代数的通用C++库，包括欧几里得、投影，保角、时空等。</li>
+<li><a href="http://www.wykobi.com/">Wykobi</a>: 高效、健壮且易于使用的C++库，面向C++ 2D / 3D的计算几何例程。</li>
+<li><a href="https://github.com/QuantStack/xtensor">xtensor</a>: 受NumPy语法启发的C++ 14库，用于使用多维数组表达式进行数值分析。</li>
+<li><a href="https://github.com/stillwater-sc/universal">universal</a>: 只包含头文件的C++ 14库，实现任意假定算数。假定数值系统是一个锥形浮点，比IEEE浮点更有效。假定数使可复现的计算科学成为可能。</li>
+</ul>
+<p>内存分配</p>
+<ul>
+<li><a href="https://github.com/ivmai/bdwgc">Boehm GC</a>: C和C++的保守的垃圾回收器。</li>
+<li><a href="https://github.com/Snaipe/libcsptr">C Smart Pointers</a>: （GNU）C编程语言的智能指针。</li>
+<li><a href="https://github.com/emeryberger/Hoard">Hoard</a>: 快速、可扩展和节约内存的Malloc，支持Linux、Windows和Mac。</li>
+<li><a href="https://github.com/jemalloc/jemalloc">jemalloc</a>: 通用的malloc（3）实现，强调避免存储碎片和可扩展的并发支持。</li>
+<li><a href="https://github.com/foonathan/memory">memory</a>: 兼容STL的C++内存分配器库。</li>
+<li><a href="https://github.com/mtrebi/memory-allocators">memory-allocators</a>: 自定义内存分配器，可提高动态内存分配的性能。</li>
+<li><a href="https://github.com/microsoft/mimalloc">mimalloc</a>: 具有出色性能的紧凑型通用分配器。</li>
+<li><a href="https://github.com/orangeduck/tgc">tgc</a>: 用 ~500 LOC编写的C语言微型垃圾回收器。</li>
+</ul>
+<p>多媒体</p>
+<ul>
+<li><a href="http://gstreamer.freedesktop.org/">GStreamer</a>: 构建媒体处理组件图形的库。</li>
+<li><a href="https://github.com/libass/libass">libass</a>: ASS / SSA字幕格式的便携式字幕渲染器。</li>
+<li><a href="https://github.com/libass/libass">libass</a>: 处理多媒体内容（例如音频、视频、字幕和相关元数据）的库和工具的集合。</li>
+<li><a href="http://www.live555.com/liveMedia/">LIVE555 Streaming Media</a>: 使用开放标准协议(RTP/RTCP, RTSP, SIP) 的多媒体流库。</li>
+<li><a href="https://wiki.videolan.org/LibVLC">libVLC</a>: libVLC (VLC SDK)媒体框架。</li>
+<li><a href="https://github.com/MediaArea/MediaInfoLib">MediaInfoLib</a>: 用于视频和音频文件中最相关的技术和标签数据的方便统一显示。</li>
+<li><a href="https://github.com/wang-bin/QtAV">QtAv</a>: 基于Qt和FFmpeg的多媒体播放框架，能够帮助你轻而易举地编写出一个播放器。</li>
+<li><a href="http://www.libsdl.org/">SDL</a>: 简单直控媒体层。</li>
+<li><a href="http://www.sfml-dev.org/">SFML</a>: 快速，简单的多媒体库。</li>
+<li><a href="https://github.com/taglib/taglib">TagLib</a>: 用于读取和编辑几种流行音频格式的元数据的库。</li>
+</ul>
+<p>网络</p>
+<ul>
+<li><a href="http://www.cs.wustl.edu/~schmidt/ACE.html">ACE</a>: C++面向对象网络编程工具包。</li>
+<li><a href="http://think-async.com/">Boost.Asio</a>: 用于网络和底层I/O编程的跨平台的C++库。</li>
+<li><a href="https://github.com/boostorg/beast">Boost.Beast</a>: 在C++ 11中基于Boost.Asio构建的HTTP和WebSocket。</li>
+<li><a href="https://github.com/Organic-Code/Breep">Breep</a>: 基于事件的高级C++ 14点对点库。</li>
+<li><a href="https://github.com/Microsoft/cpprestsdk">C++ REST SDK</a>: C++ REST SDK（以前称为Casablanca）。</li>
+<li><a href="https://github.com/corvusoft/restbed">Restbed</a>: C++ 11异步RESTful框架。</li>
+<li><a href="https://github.com/Stiffstream/restinio">Restinio</a>: 只有头文件的C++ 14库，为您提供嵌入式HTTP / Websocket服务器。</li>
+<li><a href="https://github.com/c-ares/c-ares">c-ares</a>: 用于异步DNS请求的C库。</li>
+<li><a href="https://github.com/yhirose/cpp-httplib">cpp-httplib</a>: 单文件的C++ 11 HTTP / HTTPS服务器库，只包含头文件。</li>
+<li><a href="http://cpp-netlib.org/">cpp-netlib</a>: 高级网络编程的开源库集合。</li>
+<li><a href="https://github.com/whoshuu/cpr">cpr</a>: 现代C++ HTTP请求库，具有简单但功能强大的接口。模仿Python Requests模块。</li>
+<li><a href="https://github.com/JosephP91/curlcpp">curlcpp</a>: CURL（libcurl）的面向对象C++封装器。</li>
+<li><a href="https://github.com/DPDK/dpdk">DPDK</a>: 用于快速打包处理的数据平面开发工具、库和驱动程序。</li>
+<li><a href="https://github.com/rxi/dyad">Dyad.c</a>: C的异步网络。</li>
+<li><a href="https://github.com/lsalzman/enet">ENet</a>: 可靠的UDP网络库。</li>
+<li><a href="https://github.com/Qihoo360/evpp">evpp</a>: 具有TCP / UDP / HTTP协议的C++高性能网络。</li>
+<li><a href="https://github.com/h2o/h2o">H2O</a>: 优化的HTTP服务器，支持HTTP / 1.x和HTTP / 2。它也可以用作库。</li>
+<li><a href="https://github.com/nodejs/http-parser">HTTP Parser</a>: C的http请求/响应解析器。</li>
+<li><a href="https://github.com/skywind3000/kcp/blob/master/README.en.md">KCP</a>: 快速、可靠的ARQ协议，可帮助应用程序减少网络延迟。</li>
+<li><a href="http://curl.haxx.se/libcurl/">libcurl</a>: 多协议文件传输库。</li>
+<li><a href="https://github.com/etr/libhttpserver">libhttpserver</a>: 用于创建嵌入式Rest HTTP服务器（以及更多）的C++库。</li>
+<li><a href="http://www.gnu.org/software/libmicrohttpd/">Libmicrohttpd</a>: GNU libmicrohttpd是一个小型C库，可以轻松地将HTTP服务器作为另一个应用程序的一部分运行。</li>
+<li><a href="https://github.com/the-tcpdump-group/libpcap">libpcap</a>: 用于网络流量捕获的可移植C / C++库。</li>
+<li><a href="https://github.com/devsisters/libquic">libquic</a>: 从Chromium的QUIC实现中提取的QUIC协议库。</li>
+<li><a href="https://github.com/edenhill/librdkafka">librdkafka</a>: 用于C和C++的Apache Kafka客户端库。</li>
+<li><a href="https://github.com/warmcat/libwebsockets">libwebsockets</a>: 提供客户端和服务器库的轻量级纯C WebSocket实现。</li>
+<li><a href="http://savannah.nongnu.org/projects/lwip/">lwIP</a>: 轻量级TCP / IP堆栈。</li>
+<li><a href="https://github.com/cesanta/mongoose">Mongoose</a><span style="text-decoration: underline;">: </span>非常轻量级的网络服务器。</li>
+<li><a href="https://github.com/LiamBindle/MQTT-C">MQTT-C</a>: 适用于嵌入式系统和类PC机的便携式MQTT C客户端。</li>
+<li><a href="https://github.com/mtcp-stack/mtcp">mTCP</a>: 用于多核系统的高度可扩展的用户级TCP堆栈。</li>
+<li><a href="https://github.com/chenshuo/muduo">Muduo</a>: 用于Linux多线程服务器的C++非阻塞网络库。</li>
+<li><a href="https://github.com/nghttp2/nghttp2">nghttp2</a>: HTTP / 2 C库。</li>
+<li><a href="https://github.com/davidmoreno/onion">Onion</a>: C语言HTTP服务器库，其设计为轻量级，易使用。</li>
+<li><a href="https://github.com/ntop/PF_RING">PF_RING™</a>: 高速打包处理框架。</li>
+<li><a href="https://github.com/h2o/picohttpparser">PicoHTTPParser</a>: 微小、原始、快速的HTTP请求/响应解析器。</li>
+<li><a href="https://github.com/pocoproject">POCO</a>: 用于构建网络和基于互联网应用程序的C++类库，可以运行在桌面，服务器，移动和嵌入式系统。</li>
+<li><a href="https://github.com/facebook/proxygen">Proxygen</a>: Facebook的C++ HTTP库集合，包括易于使用的HTTP服务器。</li>
+<li><a href="https://github.com/OculusVR/RakNet">RakNet</a>: 为游戏开发人员提供的跨平台的开源C++网络引擎。</li>
+<li><a href="https://github.com/mrtazz/restclient-cpp">restclient-cpp</a>: 用于C++的简单REST客户端。它包装libcurl用于HTTP请求。</li>
+<li><a href="https://github.com/mattgodbolt/seasocks">Seasocks</a>: 具有WebSockets支持的简单、小型的C++嵌入式Web服务器。</li>
+<li><a href="http://siliconframework.org/">Silicon</a>: 高性能、面向中间件的C++ 14 http Web框架。</li>
+<li><a href="https://github.com/eduardsui/tlse">tlse</a>: 单个C文件的TLS 1.2 / 1.3实现，使用tomcrypt作为加密库。</li>
+<li><a href="https://github.com/vinipsmaker/tufao">Tufão</a>: 基于Qt构建的C++异步Web框架。</li>
+<li><a href="https://github.com/uriparser/uriparser">uriparser</a>: 严格符合RFC 3986的URI解析和处理库。</li>
+<li><a href="https://github.com/uNetworking/uWebSockets">uWebSockets</a>: µWS是最轻量级、高效和可伸缩的WebSocket和HTTP服务器的实现之一。</li>
+<li><a href="https://github.com/riolet/WAFer">WAFer</a>: 基于C语言的超轻型软件平台，用于可扩展的服务器端和网络应用。为C程序员考虑了node.js。</li>
+<li><a href="https://github.com/facebook/wangle">Wangle</a>: 客户端/服务器应用程序框架，用于构建异步的、事件驱动的现代C++服务。</li>
+<li><a href="https://github.com/facebook/wdt">wdt</a>: 可嵌入式库（和命令行工具），旨在通过多个TCP路径尽可能快地在2个系统之间传输数据。</li>
+<li><a href="https://github.com/zaphoyd/websocketpp">WebSocket++</a>: 基于C++/Boost Aiso的websocket 客户端/服务器库。</li>
+<li><a href="https://github.com/seladb/PcapPlusPlus">PcapPlusPlus</a>: 跨平台的C++网络嗅探以及数据包解析和构建的框架。</li>
+<li><a href="http://zeromq.org/">ZeroMQ</a>: 高速，模块化的异步通信库。</li>
+</ul>
+<p>物理学</p>
+<ul>
+<li><a href="https://code.google.com/p/box2d/">Box2D</a>: 2D的游戏物理引擎。</li>
+<li><a href="https://github.com/bulletphysics/bullet3">Bullet</a>: 3D的游戏物理引擎。</li>
+<li><a href="https://github.com/slembcke/Chipmunk2D">Chipmunk</a>: 快速、轻量级的2D游戏物理库。</li>
+<li><a href="https://github.com/google/liquidfun">LiquidFun</a>: 2D的游戏物理引擎。</li>
+<li><a href="https://github.com/MADEAPPS/newton-dynamics">Newton Dynamics</a>: 用于物理环境实时仿真的集成解决方案。</li>
+<li><a href="http://www.ode.org/">ODE</a>: 开放动力学引擎-开源，高性能库，模拟刚体动力学。</li>
+<li><a href="https://github.com/NVIDIAGameWorks/PhysX-3.4">PhysX</a>: Nvidia开发的开源的实时物理引擎中间件SDK，作为Nvidia GameWorks软件套件的一部分。</li>
+<li><a href="https://github.com/projectchrono/chrono">Project Chrono</a>: 开源的多物理场仿真引擎。</li>
+<li><a href="https://github.com/vsoftco/qpp">Quantum++</a>: 现代的C++ 11量子计算库。</li>
+<li><a href="https://github.com/simbody/simbody">Simbody</a>: 高性能C++多体动力学/物理库，模拟关节生物力学和机械系统，像车辆，机器人和人体骨骼。</li>
+<li><a href="https://github.com/sofa-framework/sofa">SOFA</a>: SOFA是一个针对实时仿真的开源框架，其着重于医学仿真。</li>
+</ul>
+<p>机器人学</p>
+<ul>
+<li><a href="http://moos-ivp.org/">MOOS-IvP</a>: 一组开源C++模块，提供机器人平台的自主权，尤其是自主的海洋车辆。</li>
+<li><a href="http://www.mrpt.org/">MRPT</a>: 移动机器人编程工具包。</li>
+<li><a href="https://github.com/PointCloudLibrary/pcl">PCL</a>: 点云库是一个独立的，大规模的开放项目，用于2D/3D图像和点云处理。</li>
+<li><a href="http://www.roboticslibrary.org/">Robotics Library (RL)</a>: 一个独立的C++库，包括机器人动力学，运动规划和控制。</li>
+<li><a href="http://www.robwork.dk/jrobwork/">RobWork</a>: 一组C++库的集合，用于机器人系统的仿真和控制。</li>
+<li><a href="http://wiki.ros.org/">ROS</a>: 机器人操作系统，提供了一些库和工具帮助软件开发人员创建机器人应用程序。</li>
+</ul>
+<p>科学计算</p>
+<ul>
+<li>
+<p><a href="https://github.com/ddemidov/amgcl">AMGCL</a>: 只包含头文件的C++库，用于解决具有代数多重网格的大型稀疏线性系统。</p>
+</li>
+<li>
+<p><a href="http://www.fftw.org/">FFTW</a>: 用一维或者多维计算DFT的C语言库。</p>
+</li>
+<li>
+<p><a href="http://www.gnu.org/software/gsl/">GSL</a>: GNU科学库。</p>
+</li>
+<li>
+<p><a href="https://github.com/TileDB-Inc/TileDB">TileDB</a>: 快速密集和稀疏多维数组的DBMS。</p>
+</li>
+<li>
+<p><a href="https://github.com/trilinos/Trilinos">Trilinos</a>: 高性能的PDE解算器。</p>
+</li>
+<li>
+<p><a href="https://github.com/torch/torch7">Torch</a>: 科学的计算框架，广泛支持将GPU放在首位的机器学习算法。</p>
+</li>
+<li>
+<p><a href="http://www.lua.org/">Lua</a>: 用于配置文件和基本应用程序脚本的小型快速脚本引擎。</p>
+</li>
+<li>
+<p><a href="https://github.com/vinniefalco/LuaBridge">LuaBridge</a>: 轻量级、无依赖的库，用于将Lua绑定到C++。</p>
+</li>
+<li>
+<p><a href="https://github.com/dafrito/luacxx">luacxx</a>: 用于创建Lua绑定的C++ 11 API。</p>
+</li>
+</ul>
+<p>序列化</p>
+<ul>
+<li><a href="https://github.com/fraillt/bitsery">Bitsery</a>: 只包含头文件的C++二进制序列化库。</li>
+<li><a href="https://github.com/Microsoft/bond">Bond</a>: 用于处理模式化数据的开源、跨平台框架。</li>
+<li><a href="https://www.boost.org/doc/libs/master/libs/serialization/doc/index.html">Boost.Serialization</a>: Boost序列化库。</li>
+<li><a href="https://github.com/USCiLab/cereal">cereal</a>: C++11 序列化库。</li>
+<li><a href="https://github.com/tplgy/cppcodec">cppcodec</a>: 只包含头文件的C++ 11库，具有一致、灵活的API来编码/解码base64，base32和hex。</li>
+<li><a href="https://github.com/google/flatbuffers">FlatBuffers</a>: 内存高效的序列化库。</li>
+<li><a href="https://github.com/msgpack/msgpack-c">MessagePack</a>: C/C++的高效二进制序列化库，例如 JSON。</li>
+<li><a href="https://github.com/mrpt/mrpt/">mrpt-serialization</a>: 已版本控制的二进制或文本格式的序列化。</li>
+<li><a href="https://github.com/nanopb/nanopb">nanopb</a>: ANSI C中的小型代码大小的协议缓冲区实现。</li>
+<li><a href="http://code.google.com/p/protobuf/">protobuf</a>: 协议缓冲，谷歌的数据交换格式。</li>
+<li><a href="https://github.com/niXman/yas">YAS</a>: 非常快的序列化库，支持二进制/文本/ JSON格式。</li>
+</ul>
+<p>视频</p>
+<ul>
+<li><a href="http://www.webmproject.org/code/">libvpx</a>: VP8/VP9编码解码SDK。</li>
+<li><a href="https://www.ffmpeg.org/">FFmpeg</a>: 一个完整的，跨平台的解决方案，用于记录，转换视频和音频流。</li>
+<li><a href="https://github.com/strukturag/libde265">libde265</a>: 开放的h.265视频编解码器的实现。</li>
+<li><a href="https://bitbucket.org/multicoreware/x265/wiki/Home">x265</a>: 开放的H.265视频编解码器实现。</li>
+<li><a href="https://github.com/cisco/openh264">OpenH264</a>: 开源H.364 编解码器。</li>
+<li><a href="http://www.theora.org/">Theora</a>: 免费开源的视频压缩格式。</li>
+<li><a href="https://github.com/twitter/vireo/">Vireo</a>: Twitter的轻量级、多功能的视频处理库。</li>
+</ul>
+<p>Web应用框架</p>
+<ul>
+<li><a href="https://github.com/ipkn/crow">Crow</a>: 一个C++微型web框架（灵感来自于Python Flask）。</li>
+<li><a href="https://github.com/cutelyst/cutelyst">Cutelyst</a>: 在Qt上构建的C++ Web框架，使用Catalyst（Perl）框架的简单方法。</li>
+<li><a href="https://github.com/an-tao/drogon">Drogon</a>: 基于C++ 14/17的高性能HTTP应用程序框架。</li>
+<li><a href="https://github.com/boazsegev/facil.io">facil.io</a>: 事件型、高性能的C Web框架，支持HTTP、WebSocket、SSE等。</li>
+<li><a href="https://github.com/oatpp/oatpp">oat++</a>: 轻量、零依赖的框架，可创建高性能的Web服务。</li>
+<li><a href="http://pistache.io/">Pistache</a>: Pistache是一个用纯C++ 11编写的C++ REST框架，没有外部依赖性。</li>
+<li><a href="https://github.com/jlaine/qdjango/">QDjango</a>: 使用C++编写的，基于Qt库的web框架，试图效仿Django API，因此得此名。</li>
+<li><a href="http://www.webtoolkit.eu/wt">Wt</a>: 开发Web应用的C++库。</li>
+</ul>
+<p>XML</p>
+<ul>
+<li><a href="http://www.boost.org/doc/libs/1_55_0/doc/html/property_tree.html">Boost.PropertyTree</a>: 属性树解析器/生成器，可用于解析XML / JSON / INI / Info文件。</li>
+<li><a href="http://rapidxml.sourceforge.net/">RapidXml</a>: 试图创建最快速的XML解析器，同时保持易用性，可移植性和合理的W3C兼容性。</li>
+<li><a href="https://github.com/leethomason/tinyxml2">TinyXML2</a>: 简单快速的C++CML解析器，可以很容易集成到其它项目中。</li>
+<li><a href="https://code.google.com/p/ticpp/">TinyXML++</a>: TinyXML的一个全新的接口，使用了C++的许多许多优势，模板，异常和更好的异常处理。</li>
+</ul>
+<p>编译器与构建系统</p>
+<ul>
+<li><a href="http://clang.llvm.org/">Clang</a>: LLVM的C编译器，支持C++ 11/14 / 1z C11，由LLVM团队开发。</li>
+<li><a href="https://gcc.gnu.org/">GCC</a>: GNU编译器集合，支持C++ 11/14 / 1z C11和OpenMP。</li>
+<li><a href="http://llvm.org/">LLVM</a>: 模块化和可重用编译器和工具链技术的集合。</li>
+<li><a href="http://msdn.microsoft.com/en-us/vstudio/hh386302.aspx">Microsoft Visual C++</a>: MSVC，由微软公司开发。</li>
+<li><a href="https://bazel.build/">Bazel</a>: Google提供的多语言、快速且可扩展的构建系统。</li>
+<li><a href="http://www.cmake.org/">CMake</a>: 跨平台的免费开源软件用于管理软件使用独立编译的方法进行构建的过程。</li>
+<li><a href="https://conan.io/">Conan</a>: C / C++程序包管理器，开源的。</li>
+<li><a href="http://martine.github.io/ninja/">Ninja</a>: 专注于速度的小型构建系统。</li>
+<li><a href="http://www.scons.org/">Scons</a>: 使用Python scipt 配置的软件构建工具。</li>
+<li><a href="http://premake.github.io/">Premake</a>: 配置有Lua脚本的工具，可以在Windows、Mac OS X和Linux上为Visual Studio、GNU Make、Xcode、Code::Blocks等生成项目文件。</li>
+<li><a href="https://github.com/microsoft/vcpkg">Vcpkg</a>: Windows，Linux和MacOS的C++库管理器。</li>
+<li><a href="https://xmake.io/">XMake</a>: 基于Lua的C / C++的跨平台构建实用程序。</li>
+</ul>
+<p>调试器与静态代码分析</p>
+<ul>
+<li><a href="http://cppcheck.sourceforge.net/">Cppcheck</a>: 静态C/C++代码分析工具</li>
+<li><a href="https://github.com/cpplint/cpplint">cpplint</a>: 遵循Google C++样式指南的C++样式检查器。</li>
+<li><a href="http://clang-analyzer.llvm.org/index.html">Clang Static Analyzer</a>: 查找C、C++和Objective-C程序bug的源代码分析工具。</li>
+<li><a href="http://en.wikipedia.org/wiki/Comparison_of_debuggers">Comparison of debuggers</a>: 来自维基百科的调试器列表。</li>
+<li><a href="https://www.gnu.org/software/gdb">GDB</a>: GNU调试器。</li>
+<li><a href="http://lldb.llvm.org/">LLDB</a>: LLDB调试器。</li>
+<li><a href="https://metashell.readthedocs.org/">Metashell</a>: 交互式模板元程序设计，其中包括MDB metadebugger。</li>
+<li><a href="http://valgrind.org/">Valgrind</a>: 内存调试，内存泄露检测，性能分析工具。</li>
+<li><a href="http://x64dbg.com/">x64dbg</a>: Windows的开源x64 / x32调试器。</li>
+</ul>
+<h3 id="实践项目">实践项目</h3>
+<p>TODO</p>
+
+            
+            
+        </body>
+        </html>
