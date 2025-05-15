@@ -1,5 +1,5 @@
 # devfrank_cpp
-Useful learning resources about c++
+Useful learning resources about C++
 
 基于`awesome-cpp`等资源整理自己常用的实用工具及三方库。
 
@@ -56,7 +56,6 @@ C++通用框架和库
 异步事件循环
 
 - [Asio](https://github.com/chriskohlhoff/asio/): 用于网络和底层I/O编程的跨平台 C++ 库，使用现代 C++ 方法为开发者提供一致的异步模型。
-
 *   [Boost.Asio](http://think-async.com/): 用于网络和底层I/O编程的跨平台的 C++ 库。
 *   [C++ Actor Framework](https://github.com/actor-framework/actor-framework): C++中Actor Model的开源实现。
 *   [libev](http://libev.schmorp.de/): 功能齐全，高性能的时间循环，轻微地仿效libevent，但是不再像libevent一样有局限性，也修复了它的一些bug。
